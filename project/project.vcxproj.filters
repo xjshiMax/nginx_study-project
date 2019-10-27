@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{e7a2e86a-de34-4954-b16f-bd31b8b1dc55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event">
+      <UniqueIdentifier>{7792d2d4-6988-4a24-a47f-694db88c6d71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os">
+      <UniqueIdentifier>{31b0d1fd-158c-48bf-a3c9-e79597820906}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\..\nginx-1.14.2\src\os\unix\ngx_sunpro_amd64.il">
+      <Filter>os</Filter>
+    </None>
+    <None Include="..\..\nginx-1.14.2\src\os\unix\ngx_sunpro_sparc64.il">
+      <Filter>os</Filter>
+    </None>
+    <None Include="..\..\nginx-1.14.2\src\os\unix\ngx_sunpro_x86.il">
+      <Filter>os</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\nginx.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_array.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_buf.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_conf_file.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_config.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_connection.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_core.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_crc.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_crc32.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_crypt.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_cycle.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_file.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_hash.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_inet.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_list.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_log.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_md5.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_module.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_murmurhash.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_open_file_cache.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_palloc.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_parse.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_parse_time.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_proxy_protocol.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_queue.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_radix_tree.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_rbtree.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_regex.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_resolver.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_rwlock.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_sha1.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_shmtx.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_slab.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_string.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_syslog.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_thread_pool.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_times.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event_connect.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event_openssl.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event_posted.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event_timer.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_alloc.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_atomic.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_channel.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_darwin.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_darwin_config.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_dlopen.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_errno.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_files.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_freebsd.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_freebsd_config.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_gcc_atomic_amd64.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_gcc_atomic_ppc.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_gcc_atomic_sparc64.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_gcc_atomic_x86.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_linux.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_linux_config.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_os.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_posix_config.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_process.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_process_cycle.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_setaffinity.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_setproctitle.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_shmem.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_socket.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_solaris.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_solaris_config.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_sunpro_atomic_sparc64.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_thread.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_time.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_user.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event_pipe.h">
+      <Filter>os</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="project.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\nginx.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_array.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_buf.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_conf_file.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_connection.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_cpuinfo.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_crc32.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_crypt.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_cycle.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_file.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_hash.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_inet.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_list.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_log.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_md5.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_module.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_murmurhash.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_open_file_cache.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_output_chain.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_palloc.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_parse.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_parse_time.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_proxy_protocol.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_queue.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_radix_tree.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_rbtree.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_regex.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_resolver.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_rwlock.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_sha1.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_shmtx.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_slab.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_spinlock.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_string.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_syslog.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_thread_pool.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_times.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_accept.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_connect.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_openssl.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_openssl_stapling.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_pipe.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_posted.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_timer.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_alloc.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_channel.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_daemon.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_darwin_init.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_darwin_sendfile_chain.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_dlopen.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_errno.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_file_aio_read.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_files.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_freebsd_init.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_freebsd_sendfile_chain.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_linux_aio_read.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_linux_init.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_linux_sendfile_chain.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_posix_init.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_process.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_process_cycle.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_readv_chain.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_recv.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_send.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_setaffinity.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_setproctitle.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_shmem.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_socket.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_solaris_init.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_solaris_sendfilev_chain.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_thread_cond.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_thread_id.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_thread_mutex.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_time.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_udp_recv.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_udp_send.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_udp_sendmsg_chain.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_user.c">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_writev_chain.c">
+      <Filter>os</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

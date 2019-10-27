@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B9ABF2FE-D10E-468B-8BA3-38517BECAEBF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>project</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\nginx-1.14.2\src;..\..\nginx-1.14.2\src\os;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\nginx-1.14.2\src\os\unix\ngx_sunpro_amd64.il" />
+    <None Include="..\..\nginx-1.14.2\src\os\unix\ngx_sunpro_sparc64.il" />
+    <None Include="..\..\nginx-1.14.2\src\os\unix\ngx_sunpro_x86.il" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\nginx.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_array.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_buf.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_config.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_conf_file.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_connection.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_core.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_crc.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_crc32.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_crypt.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_cycle.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_file.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_hash.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_inet.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_list.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_log.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_md5.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_module.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_murmurhash.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_open_file_cache.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_palloc.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_parse.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_parse_time.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_proxy_protocol.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_queue.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_radix_tree.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_rbtree.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_regex.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_resolver.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_rwlock.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_sha1.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_shmtx.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_slab.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_string.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_syslog.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_thread_pool.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\core\ngx_times.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event_connect.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event_openssl.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event_pipe.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event_posted.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\event\ngx_event_timer.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_alloc.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_atomic.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_channel.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_darwin.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_darwin_config.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_dlopen.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_errno.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_files.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_freebsd.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_freebsd_config.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_gcc_atomic_amd64.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_gcc_atomic_ppc.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_gcc_atomic_sparc64.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_gcc_atomic_x86.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_linux.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_linux_config.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_os.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_posix_config.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_process.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_process_cycle.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_setaffinity.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_setproctitle.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_shmem.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_socket.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_solaris.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_solaris_config.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_sunpro_atomic_sparc64.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_thread.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_time.h" />
+    <ClInclude Include="..\..\nginx-1.14.2\src\os\unix\ngx_user.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\nginx.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_array.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_buf.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_conf_file.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_connection.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_cpuinfo.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_crc32.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_crypt.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_cycle.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_file.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_hash.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_inet.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_list.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_log.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_md5.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_module.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_murmurhash.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_open_file_cache.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_output_chain.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_palloc.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_parse.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_parse_time.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_proxy_protocol.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_queue.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_radix_tree.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_rbtree.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_regex.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_resolver.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_rwlock.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_sha1.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_shmtx.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_slab.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_spinlock.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_string.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_syslog.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_thread_pool.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\core\ngx_times.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_accept.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_connect.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_openssl.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_openssl_stapling.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_pipe.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_posted.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\ngx_event_timer.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_alloc.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_channel.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_daemon.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_darwin_init.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_darwin_sendfile_chain.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_dlopen.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_errno.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_files.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_file_aio_read.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_freebsd_init.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_freebsd_sendfile_chain.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_linux_aio_read.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_linux_init.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_linux_sendfile_chain.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_posix_init.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_process.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_process_cycle.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_readv_chain.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_recv.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_send.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_setaffinity.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_setproctitle.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_shmem.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_socket.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_solaris_init.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_solaris_sendfilev_chain.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_thread_cond.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_thread_id.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_thread_mutex.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_time.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_udp_recv.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_udp_send.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_udp_sendmsg_chain.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_user.c" />
+    <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_writev_chain.c" />
+    <ClCompile Include="project.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
