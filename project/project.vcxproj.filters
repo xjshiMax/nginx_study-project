@@ -22,6 +22,9 @@
     <Filter Include="os">
       <UniqueIdentifier>{31b0d1fd-158c-48bf-a3c9-e79597820906}</UniqueIdentifier>
     </Filter>
+    <Filter Include="eventmodule">
+      <UniqueIdentifier>{127b6f9e-241b-47aa-9311-5c1a7f72fa01}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -508,6 +511,27 @@
     </ClCompile>
     <ClCompile Include="..\..\nginx-1.14.2\src\os\unix\ngx_writev_chain.c">
       <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\modules\ngx_devpoll_module.c">
+      <Filter>eventmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\modules\ngx_epoll_module.c">
+      <Filter>eventmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\modules\ngx_eventport_module.c">
+      <Filter>eventmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\modules\ngx_kqueue_module.c">
+      <Filter>eventmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\modules\ngx_poll_module.c">
+      <Filter>eventmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\modules\ngx_select_module.c">
+      <Filter>eventmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nginx-1.14.2\src\event\modules\ngx_win32_select_module.c">
+      <Filter>eventmodule</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
